@@ -46,6 +46,36 @@ This task enhances the visual contrast of an image using histogram equalization.
 - Displayed and compared the **original** and **contrast-enhanced** images
 
 ---
+## 🧪 Task 4 – Component-wise Histogram Equalization and Intensity Transformations
+
+This task enhances image quality by applying histogram equalization and intensity transformation functions on individual components of an image.
+
+### ✔ Operations Performed
+- Separated the image into different components  
+- Applied histogram equalization on each component individually  
+- Applied different intensity transformation functions:
+  - Log transformation  
+  - Power-law (gamma) transformation  
+  - Contrast stretching  
+- Enhanced contrast and visibility within each component  
+- Combined all processed components to generate a single enhanced colored image  
+
+---
+
+## 🧪 Task 5 – Noise Addition and Filtering Analysis
+
+This task evaluates the effectiveness of different spatial filters on images corrupted by various types of noise.
+
+### ✔ Operations Performed
+- Applied Mean, Median, and Gaussian filters on the image  
+- Applied Laplacian filter separately for edge enhancement  
+- Added Salt & Pepper noise to the image  
+- Added Gaussian noise to the image  
+- Compared filtering results on noisy images  
+- Observed that **Median filter** performs best for **Salt & Pepper noise**  
+- Observed that **Gaussian filter** performs best for **Gaussian noise**
+
+---
 
 ## 🛠 Tools & Technologies Used
 - ** Python** 
