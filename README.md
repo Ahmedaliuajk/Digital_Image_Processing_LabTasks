@@ -78,8 +78,8 @@ This task evaluates the effectiveness of different spatial filters on images cor
 ---
 
 ## 🛠 Tools & Technologies Used
-- # python 
-- **OpenCV**
+- python 
+- OpenCV
 - Standard Digital Image Processing techniques
 
 ---
