@@ -84,3 +84,26 @@ This task evaluates the effectiveness of different spatial filters on images cor
 
 ---
 
+🧪 Task 8 – Image Restoration
+This task explores techniques to recover the original content of an image from a degraded or noisy version.
+
+✔ Operations Performed
+-Noise Injection: Artificially degraded images using Gaussian noise, Salt & Pepper noise, and Motion Blur.
+-Filtering & Deconvolution: Applied Median filtering for impulsive noise and Wiener/Inverse filtering to reverse blurring effects.
+-Motion Blur Recovery: Specifically restored blurred images by modeling the degradation function.
+-Quality Assessment: Computed the Peak Signal-to-Noise Ratio (PSNR) to objectively measure restoration quality.
+-Comparative Analysis: Identified the optimal restoration method for each specific degradation type.
+
+---
+
+🧪 Task 9 – Color Image Processing
+-This task focuses on manipulating color information across different mathematical representations to enhance or segment images.
+✔ Operations Performed
+-Channel Extraction: Separated the Red, Green, and Blue components to analyze individual color contributions.
+-Color Space Conversion: Transformed images from RGB to specialized spaces including HSV (Hue/Saturation/Value), YCbCr (Luminance/Chrominance), and CIELAB (Perceptual Uniformity).
+-White Balance Correction: Adjusted the color temperature to ensure neutral colors (whites/grays) are rendered accurately.
+-Color Masking: Isolated specific objects by defining ranges within the HSV color space.
+-Segmentation Comparison: Evaluated which color space provided the highest contrast and most robust segmentation for various objects.
+
+---
+
