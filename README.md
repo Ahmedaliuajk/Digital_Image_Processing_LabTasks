@@ -107,3 +107,23 @@ This task explores techniques to recover the original content of an image from a
 
 ---
 
+🧪 Task 12 – Segmentation Techniques
+This task focuses on partitioning an image into meaningful regions by grouping pixels based on intensity, color, and spatial similarity.
+
+✔ Operations Performed
+
+- Image Preprocessing: Converted the input image to grayscale and color formats as required for different segmentation techniques.
+
+- Global Thresholding: Applied a fixed threshold value to segment the image into foreground and background regions.
+
+- Local (Otsu’s) Thresholding: Automatically computed an optimal threshold based on image histogram statistics to improve segmentation accuracy.
+
+- Adaptive Thresholding: Performed pixel-wise thresholding using local neighborhood information to handle uneven illumination.
+
+- K-Means Segmentation: Implemented unsupervised clustering-based segmentation with varying cluster sizes (k = 2, 3, and 4) to analyze the effect of cluster count on region separation.
+
+- Mean Shift Segmentation: Applied non-parametric clustering to group pixels based on spatial and color similarity without predefining the number of clusters.
+
+- Visual Comparison: Displayed and compared the results of all segmentation methods to evaluate segmentation quality and region consistency.
+
+- Method Analysis: Discussed the strengths and limitations of threshold-based and clustering-based segmentation techniques.
