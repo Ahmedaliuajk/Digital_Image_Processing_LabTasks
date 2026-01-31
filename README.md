@@ -103,18 +103,18 @@ This task focuses on analyzing images in the frequency domain and separating low
 This task focuses on image enhancement and analysis using frequency domain filtering techniques by selectively preserving or suppressing low-frequency and high-frequency components.
 
 ### ✔ Operations Performed
--Imported the input image and converted it to grayscale for frequency domain processing
--Computed the 2D Fast Fourier Transform (FFT) of the image and shifted the zero-frequency component to the center
--Designed Ideal Low Pass Filter (LPF) to preserve low-frequency components responsible for smooth regions
--Designed Butterworth Low Pass Filter (LPF) with adjustable order for smooth frequency transition
--Designed Gaussian Low Pass Filter (LPF) for gradual attenuation of high frequencies
--Applied LPF masks in the frequency domain and reconstructed spatial images using Inverse FFT
--Designed Ideal High Pass Filter (HPF) to emphasize edges and fine details
--Designed Butterworth High Pass Filter (HPF) for controlled edge enhancement
--Designed Gaussian High Pass Filter (HPF) to smoothly extract high-frequency components
--Applied HPF masks and reconstructed spatial images using Inverse FFT
--Visually compared the effects of Ideal, Butterworth, and Gaussian filters in both low-pass and high-pass cases
--Performed spatial domain Gaussian filtering and compared its result with frequency domain filtering
+- Imported the input image and converted it to grayscale for frequency domain processing
+- Computed the 2D Fast Fourier Transform (FFT) of the image and shifted the zero-frequency component to the center
+- Designed Ideal Low Pass Filter (LPF) to preserve low-frequency components responsible for smooth regions
+- Designed Butterworth Low Pass Filter (LPF) with adjustable order for smooth frequency transition
+- Designed Gaussian Low Pass Filter (LPF) for gradual attenuation of high frequencies
+- Applied LPF masks in the frequency domain and reconstructed spatial images using Inverse FFT
+- Designed Ideal High Pass Filter (HPF) to emphasize edges and fine details
+- Designed Butterworth High Pass Filter (HPF) for controlled edge enhancement
+- Designed Gaussian High Pass Filter (HPF) to smoothly extract high-frequency components
+- Applied HPF masks and reconstructed spatial images using Inverse FFT
+- Visually compared the effects of Ideal, Butterworth, and Gaussian filters in both low-pass and high-pass cases
+- Performed spatial domain Gaussian filtering and compared its result with frequency domain filtering
 
 ---
 
