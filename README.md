@@ -85,16 +85,16 @@ This task evaluates the effectiveness of different spatial filters on images cor
 This task focuses on analyzing images in the frequency domain and separating low-frequency and high-frequency components using Fourier Transform–based filtering.
 
 ### ✔ Operations Performed
--Imported the input image and converted it to grayscale for frequency analysis
--Computed the 2D Fast Fourier Transform (FFT) of the image to transform it from spatial to frequency domain
--Shifted the zero-frequency component to the center of the spectrum for better visualization
--Computed and displayed the magnitude spectrum of the FFT image
--Created a low-pass filter mask to preserve low-frequency components representing smooth image regions
--Applied the low-pass mask to the FFT image to suppress high-frequency details
--Created a high-pass filter mask to preserve high-frequency components representing edges and fine details
--Applied the high-pass mask to the FFT image to suppress low-frequency components
--Performed inverse FFT to reconstruct spatial-domain images from both low-frequency and high-frequency components
--Displayed and compared the low-frequency (smoothed) and high-frequency (edge-enhanced) images
+- Imported the input image and converted it to grayscale for frequency analysis
+- Computed the 2D Fast Fourier Transform (FFT) of the image to transform it from spatial to frequency domain
+- Shifted the zero-frequency component to the center of the spectrum for better visualization
+- Computed and displayed the magnitude spectrum of the FFT image
+- Created a low-pass filter mask to preserve low-frequency components representing smooth image regions
+- Applied the low-pass mask to the FFT image to suppress high-frequency details
+- Created a high-pass filter mask to preserve high-frequency components representing edges and fine details
+- Applied the high-pass mask to the FFT image to suppress low-frequency components
+- Performed inverse FFT to reconstruct spatial-domain images from both low-frequency and high-frequency components
+- Displayed and compared the low-frequency (smoothed) and high-frequency (edge-enhanced) images
 
 ---
 
@@ -150,12 +150,12 @@ This task explores techniques to recover the original content of an image from a
 This task focuses on reducing image size while maintaining acceptable visual quality using transform-based compression techniques.
 
 ### ✔ Operations Performed
--Loaded and preprocessed the grayscale input image for compression
--Applied JPEG-like compression using 8×8 block-based Discrete Cosine Transform (DCT)
--Quantized DCT coefficients using a standard JPEG quantization matrix
--Reconstructed the compressed image using inverse DCT
--Computed performance metrics including Compression Ratio (CR), Mean Squared Error (MSE), Peak Signal-to-Noise Ratio (PSNR), and Rate–Distortion (RD)
--Visually compared the original and compressed images to evaluate compression efficiency
+- Loaded and preprocessed the grayscale input image for compression
+- Applied JPEG-like compression using 8×8 block-based Discrete Cosine Transform (DCT)
+- Quantized DCT coefficients using a standard JPEG quantization matrix
+- Reconstructed the compressed image using inverse DCT
+- Computed performance metrics including Compression Ratio (CR), Mean Squared Error (MSE), Peak Signal-to-Noise Ratio (PSNR), and Rate–Distortion (RD)
+- Visually compared the original and compressed images to evaluate compression efficiency
 
 ---
 
@@ -164,14 +164,14 @@ This task focuses on reducing image size while maintaining acceptable visual qua
 This task explores the use of morphological techniques to analyze and manipulate the structure of objects in binary images.
 
 ### ✔ Operations Performed
--Converted the input image into a binary image suitable for morphology
--Applied erosion and dilation to modify object boundaries
--Performed opening to remove noise and small objects
--Performed closing to fill gaps and connect nearby regions
--Extracted object boundaries using morphological subtraction
--Filled holes in objects using morphological reconstruction
--Removed noise using morphological filtering techniques
--Detected and labeled basic geometric shapes using morphological preprocessing and contour analysis
+- Converted the input image into a binary image suitable for morphology
+- Applied erosion and dilation to modify object boundaries
+- Performed opening to remove noise and small objects
+- Performed closing to fill gaps and connect nearby regions
+- Extracted object boundaries using morphological subtraction
+- Filled holes in objects using morphological reconstruction
+- Removed noise using morphological filtering techniques
+- Detected and labeled basic geometric shapes using morphological preprocessing and contour analysis
 
 
 ---
