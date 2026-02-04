@@ -189,3 +189,134 @@ This task focuses on partitioning an image into meaningful regions by grouping p
 - Mean Shift Segmentation: Applied non-parametric clustering to group pixels based on spatial and color similarity without predefining the number of clusters.
 - Visual Comparison: Displayed and compared the results of all segmentation methods to evaluate segmentation quality and region consistency.
 - Method Analysis: Discussed the strengths and limitations of threshold-based and clustering-based segmentation techniques.
+
+  ---
+
+  # 🧬 Melanoma Detection Using Dermoscopic Images (PH2 Dataset)
+
+This project presents a **machine learning–based melanoma detection system** developed using **dermoscopic images from the PH2 dataset**.  
+The system follows a complete pipeline including **image preprocessing, lesion segmentation, feature extraction, model training, evaluation, and deployment using Streamlit**.
+
+⚠️ **Note:**  
+This system is trained **only on PH2 dermoscopic images** and is **not intended for clinical or real-world medical diagnosis**.
+
+---
+
+## 🧪 Task 1 – Lesion Mask Generation
+
+Dermoscopic images are processed to generate accurate binary masks representing lesion regions.
+
+### ✔ Operations Performed
+- Loaded original **PH2 dermoscopic images**
+- Converted images to **grayscale**
+- Applied **Gaussian blurring** for noise reduction
+- Used **Otsu’s thresholding** to segment lesions
+- Applied **morphological opening and closing** to refine masks
+- Generated **binary masks** where:
+  - **White region → Lesion area**
+  - **Black region → Background / skin**
+
+📁 Output Folder:  
+`Generated_Masks/`
+
+---
+
+## 🧪 Task 2 – Image Segmentation (Lesion Isolation)
+
+Using the generated masks, lesion regions are isolated from the original images.
+
+### ✔ Operations Performed
+- Applied binary masks to original images
+- Retained **only the central lesion region**
+- Removed surrounding skin and image edges (set to black)
+- Ensured **lesion-only visibility** for accurate feature extraction
+
+📁 Output Folder:  
+`Segmented_Images_2/`
+
+---
+
+## 🧪 Task 3 – Feature Extraction
+
+Handcrafted features are extracted from segmented lesion images to form a structured dataset for machine learning.
+
+### ✔ Features Extracted
+- **Mean Intensity**
+- **Standard Deviation of Intensity**
+- **Lesion Area (pixel count)**
+- **Mean Red Channel Value**
+- **Mean Green Channel Value**
+- **Mean Blue Channel Value**
+- **Target Label**
+  - `1 → Melanoma`
+  - `0 → No Melanoma`
+
+📁 Output File:  
+`Feature_Extracted_V2.xlsx`
+
+---
+
+## 🧪 Task 4 – Machine Learning Model Training
+
+Two separate machine learning approaches were implemented:
+
+### ✔ Random Forest Classifier
+- Trained on extracted features
+- Saved as a reusable model file
+
+📦 Model File:  
+`RF_Model_V2.joblib`
+
+---
+
+### ✔ K-Fold Cross Validation (k = 5)
+- Applied **Stratified K-Fold Cross Validation**
+- Evaluated model stability and performance
+- Metrics calculated for each fold:
+  - Accuracy
+  - Sensitivity (Recall)
+  - Specificity
+- Final model trained on the full dataset and saved separately
+
+📦 Model File:  
+`KFold_Model.joblib`
+
+---
+
+## 📊 Evaluation Metrics
+
+The following metrics are used to assess performance:
+
+- **Confusion Matrix**
+- **Accuracy**
+- **Sensitivity (Recall)** – Critical for melanoma detection
+- **Specificity**
+
+These metrics help evaluate both **classification accuracy** and **medical relevance**.
+
+---
+
+## 🖥️ Streamlit Dashboard (Deployment)
+
+A user-friendly **Streamlit web application** is developed to test melanoma prediction on PH2 images.
+
+### ✔ Dashboard Features
+- Upload dermoscopic images
+- Automatic feature extraction
+- Melanoma prediction using trained model
+- Confidence score display
+- Dataset usage disclaimer
+
+📸 **Streamlit Dashboard Preview:**
+
+![Streamlit Dashboard](img/dashboard.png)
+
+---
+
+## 🚀 How to Run the Streamlit App
+
+1. Clone the repository
+2. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+
