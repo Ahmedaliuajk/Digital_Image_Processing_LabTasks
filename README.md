@@ -191,8 +191,8 @@ This task focuses on partitioning an image into meaningful regions by grouping p
 - Method Analysis: Discussed the strengths and limitations of threshold-based and clustering-based segmentation techniques.
 
   ---
-
-  # 🧬 Melanoma Detection Using Dermoscopic Images (PH2 Dataset)
+# Open-Ended_Lab
+# 🧬 Melanoma Detection Using Dermoscopic Images (PH2 Dataset)
 
 This project presents a **machine learning–based melanoma detection system** developed using **dermoscopic images from the PH2 dataset**.  
 The system follows a complete pipeline including **image preprocessing, lesion segmentation, feature extraction, model training, evaluation, and deployment using Streamlit**.
@@ -307,9 +307,14 @@ A user-friendly **Streamlit web application** is developed to test melanoma pred
 - Confidence score display
 - Dataset usage disclaimer
 
-📸 **Streamlit Dashboard Preview:**
+## 🖥️ Streamlit Dashboard – Melanoma Detection
 
-![Streamlit Dashboard](img/dashboard.png)
+The following image shows the Streamlit-based dashboard developed for melanoma detection using dermoscopic images from the PH2 dataset.
+
+![Streamlit Dashboard](img.png)
+
+
+
 
 ---
 
